@@ -1,0 +1,15 @@
+ifeq ($(CONFIG_MTK_PROT_MEM_SUPPORT), y)
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/trusted_mem/public/
+endif
+
+ifeq ($(CONFIG_MTK_SECURE_MEM_SUPPORT), y)
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/trusted_mem/public/
+endif
+
+ifeq ($(CONFIG_MTK_WFD_SMEM_SUPPORT), y)
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/trusted_mem/public/
+endif
+
+ifeq ($(CONFIG_MTK_TRUSTED_MEMORY_SUBSYSTEM), y)
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/trusted_mem/public/
+endif
